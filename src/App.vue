@@ -1,9 +1,3 @@
 <template>
-  <div class="wrapper">
-    <HelloWorld msg="vamos con moral!" />
-  </div>
+  <h1>Hola Johnny</h1>
 </template>
-
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>

@@ -6,7 +6,7 @@
           class="flex h-full items-center text-xl"
           href="/"
         >
-          <!-- Bobo Careers -->
+          <!-- Recording Careers -->
           {{ company }}
         </a>
         <h2 class="ml-8 flex h-full items-center">Developed by {{ author }}</h2>
@@ -20,7 +20,7 @@ export default {
   name: 'MainNav',
   data() {
     return {
-      company: 'Bobo Careers',
+      company: 'Recording Careers',
       author: 'Johnny sepulveda'
     }
   }

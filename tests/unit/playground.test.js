@@ -1,10 +1,25 @@
 import { describe, it, expect } from 'vitest'
-// Vamos a escribir por ejemplo una prueba en este banco de pruebas (test suite)
-// que se centren en matemáticas básicas en javascript
-// Solo estamos describiendo lo que vamos a testear
+// import { evenOrOdd } from '../../src/playground'
+import { evenOrOdd } from '@/playground'
+
 describe('basic math', () => {
   it('adds two numbers', () => {
     expect(1 + 1).toBe(2)
+  })
+
+  // we can have nested describe function
+  // it's only a way to organizate this outputs in terminal
+  describe('even or odd', () => {
+    describe('when number is even', () => {
+      it('indicates the number is even', () => {
+        expect(evenOrOdd(4)).toBe('Even')
+      })
+    })
+    describe('when number is odd', () => {
+      it('indicates the number is odd', () => {
+        expect(evenOrOdd(15)).toBe('Odd')
+      })
+    })
   })
 })
 
